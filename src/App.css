@@ -1,0 +1,78 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+:root {
+    /* Colors */
+    --bg: #ffffff;
+    --ink: #14161c;
+    --mute: #6a6f7b;
+    --acc: #2742ff;
+
+    /* Font Families */
+    --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme {
+    --color-bg: var(--bg);
+    --color-ink: var(--ink);
+    --color-mute: var(--mute);
+    --color-acc: var(--acc);
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+}
+
+/* Base styles using the variables */
+body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+}
+
+code,
+pre,
+kbd,
+samp {
+    font-family: var(--font-mono);
+}
+
+/* Floating Up-Down Badge Animations */
+@keyframes floatBadge1 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatBadge2 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes floatBadge3 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.animate-float-1 {
+    animation: floatBadge1 3.5s ease-in-out infinite;
+}
+
+.animate-float-2 {
+    animation: floatBadge2 4s ease-in-out infinite;
+}
+
+.animate-float-3 {
+    animation: floatBadge3 3.2s ease-in-out infinite;
+}

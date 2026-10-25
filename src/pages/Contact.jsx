@@ -193,7 +193,7 @@ export default function Contact() {
                 {/* Your name */}
                 <div>
                   <label className="block text-xs sm:text-sm font-semibold text-[var(--ink)] mb-2">
-                    Your name
+                    Ayush Gandhi
                   </label>
                   <input
                     type="text"
